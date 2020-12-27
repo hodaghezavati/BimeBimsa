@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='assets/css/icon-font.css'>
+    </link>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
+
+    <script src="assets/js/js.js"></script>
+
+    <!-- <script src="assets/js/jquery.js"></script> -->
+    <!-- <script src="assets/js/select2.full.js"></script> -->
+    <!-- <link rel="stylesheet" href="/assets/css/select2.css"> -->
+
+    <!-- <script type="text/javascript" src="assets/js/function.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/jqueryFunction.js"></script> -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <!-- 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+
+
+    <title>Bimsa</title>
+</head>
+
+<body>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+
+        <div class="container">
+            <a href="#menu" class="navmobile__mainicon d-flex d-lg-none"> <img src="assets/img/menu (1)@2x.png"
+                    class="navbar-toggler-icon navbar__mobileicon" id="menu_toggle" /></a>
+
+            <nav class="navigation-mobile flex column justi-around align-end " id="menu">
+                <div class="navigation-mobile__content">
+                    <div class="navigation-mobile__header">
+                        <a href="#header"><img class="navigation-mobile__close" src="assets/img/close (1).png"></a>
+                        <button class="navigation-mobile__login-btn">ورود/عضویت</button>
+                    </div>
+                    <div class="navigation-mobile__nav">
+                        <ul class="navigation-mobile__list list-unstyled">
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_11.png 1x,assets/img/Mask_Group_11@2x.png 2x"
+                                    alt="bime shakhs sales"><a class="navigation-mobile__link" href="#">بیمه شخص
+                                    ثالث</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_13.png 1x,assets/img/Mask_Group_13@2x.png 2x"
+                                    alt="bime badane"><a class="navigation-mobile__link" href="#">بیمه بدنه</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_14.png 1x,assets/img/Mask_Group_14@2x.png 2x"
+                                    alt="bime mosaferti"><a class="navigation-mobile__link" href="#">بیمه مسافرتی</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_9.png 1x,assets/img/Mask_Group_9@2x.png 2x"
+                                    alt="bime darman va corona"><a class="navigation-mobile__link" href="#">بیمه درمان و
+                                    کرونا</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_12.png 1x,assets/img/Mask_Group_12@2x.png 2x"
+                                    alt="bime omr"><a class="navigation-mobile__link" href="#">بیمه عمر</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_10.png 1x,assets/img/Mask_Group_10@2x.png 2x"
+                                    alt="bime motor "><a class="navigation-mobile__link" href="#">بیمه‌ موتور سیکلت</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_15.png 1x,assets/img/Mask_Group_15@2x.png 2x"
+                                    alt="bime sazmani"><a class="navigation-mobile__link" href="#">بیمه‌ سازمانی</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_16.png 1x,assets/img/Mask_Group_16@2x.png 2x"
+                                    alt="bime atash soozi"><a class="navigation-mobile__link" href="#">بیمه‌ آتش
+                                    سوزی</a>
+                            </li>
+                            <hr class="navigation-mobile__separator">
+                            <li class="navigation-mobile__item  flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/024---Friendship.png 1x,assets/img/024---Friendship@2x.png 2x"
+                                    alt="bime motor "><a class="navigation-mobile__link" href="#">بیمه های همکار</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Page-1.png 1x,assets/img/Page-1@2x.png 2x" alt="bime sazmani"><a
+                                    class="navigation-mobile__link" href="#">وبلاگ</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/work.png 1x,assets/img/work@2x.png 2x" alt="bime atash soozi"><a
+                                    class="navigation-mobile__link" href="#">همکاری با بیمسا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-flex flex-column flex-lg-row text-center w-20  order-1 order-lg-0">
+                <img srcset="assets/img/kisspng-logo-coreldraw-cdr-cli_h.png 1x,assets/img/kisspng-logo-coreldraw-cdr-cli_h@2x.png 2x"
+                    alt="logo" class="d-inline navbar__logo">
+                <span class=" navbar-brand d-inline align-middle align-self-center bim-font">بیمسا</span>
+            </div>
+
+            <div class="collapse navbar-collapse  justify-content-center navbar__menudesktop  order-lg-1">
+
+                <ul class="navbar-nav  mt-2 mt-lg-0">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">انواع بیمه ها </a>
+                    </li>
+                    <li class="nav-item  px-3">
+                        <a class="nav-link" href="#">فروش</a>
+                    </li>
+                    <li class="nav-item  px-3">
+                        <a class="nav-link " href="#">بیمه های همکار</a>
+                    </li>
+                    <li class="nav-item  px-3">
+                        <a class="nav-link " href="#">بلاگ</a>
+                    </li>
+                    <li class="nav-item  px-3">
+                        <a class="nav-link " href="#">تماس با ما</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="d-flex flex-row w-25 justify-content-start  w-lg-25  order-2 order-lg-2">
+                <div class="d-flex d-lg-none ">
+                    <img src="assets/img/account@2x.png" alt="" class="navbar__mobileicon">
+                </div>
+                <div class="d-none d-lg-block">
+                    <img srcset="assets/img/person.png 1x,assets/img/person@2x.png 2x" alt="user photo"
+                        class="d-inline align-middle ">
+                    <span class="d-inline align-middle bim-font">حساب کاربری</span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </nav>
+    <!-- <div class="collapse navbar-collapse justify-content-end   navbar__menumobile  order-lg-1" id="navbarTogglerbimsa">
+
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">انواع بیمه ها </a>
+            </li>
+            <li class="nav-item  px-3">
+                <a class="nav-link" href="#">فروش</a>
+            </li>
+            <li class="nav-item  px-3">
+                <a class="nav-link " href="#">بیمه های همکار</a>
+            </li>
+            <li class="nav-item  px-3">
+                <a class="nav-link " href="#">بلاگ</a>
+            </li>
+            <li class="nav-item  px-3">
+                <a class="nav-link " href="#">تماس با ما</a>
+            </li>
+        </ul>
+
+    </div> -->
+
+
+    <!-- <div class="conversation">
+		
+		<div  class="conversation__button-right">	
+			<img src="assets/img/service-1.png" alt="گفت و گو با ما" class="conversation__img">
+			<p>گفت و گو با ما</p>
+		</div>
+		<div  class="conversation__button-left">
+			
+			<img src="assets/img/service4.png" alt="تمدید" class="conversation__img">
+			<p >تمدید</p>
+		</div>
+		
+	</div> -->
+
+    <!-- دایره ثابت مربوط به تمدید -->
+    <a href="#"
+        class="fixed-circle home fixed-circle--left d-none d-lg-flex flex-column  align-items-center justify-content-center">
+        <img srcset="assets/img/service4.png 1x,assets/img/service4@2x.png 2x" alt="tamdid"
+            class="fixed-circle__extension-photo">
+        <span class="fixed-circle__extension-text">تمدید</span>
+    </a>
+    <!-- دایره ثابت مربوط به گفتگو با ما -->
+    <a href="#"
+        class="fixed-circle home fixed-circle--right d-none d-lg-flex flex-column align-items-center justify-content-center">
+        <img srcset="assets/img/service3.png 1x,assets/img/service3@2x.png 2x" alt="coverstion"
+            class="fixed-circle__coverstion-photo">
+        <span class="fixed-circle__coverstion-text">گفتگو با ما</span>
+    </a>
+
+    <header class="header position-relative ">
+        <div class="custom-shape-divider-bottom-1604234456">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+
+
+        <div class="container position-absolute option">
+            <div class="option-box1 h-10 ">
+
+            </div>
+            <div class="option-box2">
+                <div class="row ">
+
+                    <div class="col-lg-3  col-6  overflow-hidden ">
+                        <a href="#">
+                            <div
+                                class="option-boxes  overflow-hidden d-flex flex-column justify-content-center align-items-center py-lg-5 px-0 px-lg-0  mr-lg-0">
+                                <img src="assets/img/Mask Group 25.png" class=" img-fluid py-2" alt="بیمه شخص ثالث">
+                                <p class="mt-5">بیمه شخص ثالث</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3  col-6   overflow-hidden">
+                        <a href="#">
+                            <div
+                                class="option-boxes  overflow-hidden d-flex flex-column justify-content-center align-items-center py-lg-5 px-0 px-lg-0  mr-lg-0">
+                                <img src="assets/img/Mask Group 30.png" class=" img-fluid py-2" alt="بیمه بدنه">
+                                <p class="mt-5">بیمه بدنه</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3  col-6  overflow-hidden ">
+                        <a href="#">
+                            <div
+                                class="option-boxes d-flex flex-column justify-content-center align-items-center py-lg-5 px-0 px-lg-0  mr-lg-0">
+                                <img src="assets/img/Mask Group 28.png" class=" img-fluid py-2" alt="بیمه مسافرتی">
+                                <p class="mt-5">بیمه مسافرتی</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3  col-6  overflow-hidden ">
+                        <a href="#">
+                            <div
+                                class="option-boxes  overflow-hidden d-flex flex-column justify-content-center align-items-center py-lg-5 px-0 px-lg-0 mr-3 mr-lg-0">
+                                <img src="assets/img/Mask Group 26.png" class=" img-fluid py-2" alt="بیمه آتش سوزی">
+                                <p class="mt-5">بیمه آتش سوزی</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="option-box3">
+                <div class="row">
+
+                    <div class="col-lg-3  col-6  overflow-hidden ">
+                        <a href="#">
+                            <div
+                                class="option-boxes d-flex flex-column justify-content-center align-items-center py-lg-5 px-0 px-lg-0  mr-lg-0">
+                                <img src="assets/img/Mask Group 33.png" alt="بیمه موتور سیکلت " class=" img-fluid py-2">
+                                <p class="mt-5">بیمه موتور سیکلت</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3  col-6  ">
+                        <a href="#">
+                            <div
+                                class="option-boxes d-flex  overflow-hidden flex-column justify-content-center align-items-center py-lg-5 px-0 px-lg-0  mr-lg-0">
+                                <img src="assets/img/Mask Group 31.png " alt="بیمه عمر" class=" img-fluid py-2">
+                                <p class="mt-5">بیمه عمر</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3  col-6   overflow-hidden">
+                        <a href="#">
+                            <div
+                                class="option-boxes  overflow-hidden d-flex flex-column justify-content-center align-items-center py-lg-5 px-0 px-lg-0  mr-lg-0">
+                                <img src="assets/img/Mask Group 15.png" alt="بیمه سازمانی" class=" img-fluid py-2">
+                                <p class="mt-5">بیمه سازمانی</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3  col-6   overflow-hidden">
+                        <a href="#">
+                            <div
+                                class="option-boxes overflow-hidden d-flex flex-column justify-content-center align-items-center py-lg-5 px-0 px-lg-0  mr-lg-0">
+                                <img src="assets/img/Mask Group -11@2x.png" alt="بیمه درمان و کرونا "
+                                    class=" img-fluid py-2">
+                                <p class="mt-5">بیمه درمان و کرونا </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="main pb-5">
+
+        <div class="container">
+            <div class="content shadow-sm">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content__heading mt-5">
+                            <h1 class="content__heading1">بیمسا</h1>
+                            <h2 class="content__heading2 mt-4">بیمه آسان</h2>
+                            <h3 class="content__heading3 mt-4">سامانه خرید و مقایسه آنلاین بیمه</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__services d-flex ">
+                    <div class="row w-100">
+
+                        <div class="col-lg-3  col-12 mt-5">
+                            <div
+                                class="content__services1 d-flex  flex-column justify-content-center align-items-center">
+                                <img src="assets/img/Layer-3.png" alt="">
+                                <p class="mt-4">سادگی در خرید</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3   mt-5">
+                            <div
+                                class="content__services2 d-flex  flex-column justify-content-center align-items-center">
+                                <img src="assets/img/Layer-2.png" alt="">
+                                <p class="mt-4">سرعت در صدور</p>
+                            </div>
+                        </div>
+                        <div class="  col-12 col-lg-3  mt-5">
+                            <div
+                                class="content__services3 d-flex  flex-column justify-content-center align-items-center">
+                                <img src="assets/img/Layer-4.png" alt="">
+                                <p class="mt-4">ارسال رایگان</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3   mt-5">
+                            <div
+                                class="content__services4 d-flex  flex-column justify-content-center align-items-center">
+                                <img src="assets/img/Layer-1.png" alt="">
+                                <p class="mt-4">پشتیبانی در تمام مراحل</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="row">
+
+                    <div class="col-12 mt-5 mt-lg-5">
+                        <h2 class=" mt-5 d-flex justify-content-center">یادآور تمدید یا اقساط بیمه</h2>
+                        <img src="assets/img/circle.png"
+                            class="d-flex justify-content-center mt-5 img-fluid content__insurance-divider" alt="">
+                    </div>
+
+
+
+
+                </div>
+                <div class="content__insurance d-flex justify-content-around  mx-lg-5 px-lg-5">
+                    <div class="row w-100 mx-lg-5 px-lg-5 shadow-sm">
+
+                        <div class="col-12 col-lg-4  mt-5 ">
+                            <div class="content__insurance-box ">
+                                <label class="content__insurance-label  mb-3">نحوه تکرار</label>
+                                <div class="con">
+                                    <select class="select2  py-5" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-12 col-lg-4  mt-5">
+                            <div class="content__insurance-box ">
+                                <label class="content__insurance-label  mb-3">نحوه تکرار</label>
+                                <div class="con">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-4  mt-5">
+                            <div class="content__insurance-box ">
+                                <label class="content__insurance-label  mb-3">نحوه تکرار</label>
+                                <div class="con">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-4  mt-5">
+                            <div class="content__insurance-box ">
+                                <label class="content__insurance-label  mb-3">نحوه تکرار</label>
+                                <div class="con">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-4  mt-5">
+                            <div class="content__insurance-box ">
+                                <label class="content__insurance-label mb-3">نحوه تکرار</label>
+                                <div class="con">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-lg-4 mt-5">
+                            <div class="content__insurance-box ">
+                                <label class="content__insurance-label mb-3">نحوه تکرار</label>
+                                <div class="con">
+                                    <select class="select2" name="specialty">
+                                        <option value=""> تخصص </option>
+                                        <option value=""> آپروتینین </option>
+                                        <option value="">آتراکوریوم</option>
+                                        <option value=""> آتروپین </option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 d-flex justify-content-center mx-auto mt-5">
+                            <button class=" content__button  btn-block w-100 py-3 my-5 ">ثبت</button>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <div class="row">
+                    <div class="colleague mt-5">
+                        <div class="col-12 ">
+                            <div class="colleague__header mt-5 ">
+                                <h2 class="">بیمه های همکار</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 ">
+                            <!-- <div class="colleague__carousel">
+                                <div class="colleague__carousel-card" id="1" data-pos="1" data-scale="1"
+                                    style="transform: rotate(87deg)  translate(40rem) rotate(-87deg) rotateX(-65deg) translateZ(10rem) scale(1.3) ">
+                                    <img src="assets/img/11 - Copy.png" alt="">
+                                </div>
+                                <div class="colleague__carousel-card" id="2" data-pos="" data-scale=".8"
+                                    style="transform: rotate(132deg) translate(40rem) rotate(-132deg) rotateX(-65deg) translateZ(10rem) scale(1.1) translatex(2rem); ">
+                                    <img src="assets/img/14.png" alt="">
+                                </div>
+                                <div class="colleague__carousel-card" id="3" data-pos="" data-scale=".6"
+                                    style="transform: rotate(177deg) translate(40rem) rotate(-177deg) rotateX(-65deg) translateZ(10rem) scale(.9) translatex(2rem);">
+                                    <img src="assets/img/15 - Copy.png" alt="">
+                                </div>
+                                <div class="colleague__carousel-card" id="4" data-pos="" data-scale=".4"
+                                    style="transform: rotate(222deg)  translate(40rem) rotate(-222deg) rotateX(-65deg) translateZ(10rem) scale(.7) translatex(2rem); ">
+                                    <img src="assets/img/18 - Copy.png" alt="">
+                                </div>
+                                <div class="colleague__carousel-card" id="5" data-pos="" data-scale=".3"
+                                    style="transform: rotate(267deg) translate(40rem) rotate(-267deg) rotateX(-65deg) translateZ(10rem) scale(.6) translatex(2rem);">
+                                    <img src="assets/img/21.png" alt="">
+                                </div>
+                                <div class="colleague__carousel-card" id="6" data-pos="" data-scale=".4"
+                                    style="transform: rotate(313deg) translate(40rem) rotate(-313deg) rotateX(-65deg) translateZ(10rem) scale(.7) translatex(2rem);">
+                                    <img src="assets/img/5.png" alt="">
+                                </div>
+                                <div class="colleague__carousel-card" id="7" data-pos="" data-scale=".6"
+                                    style="transform: rotate(360deg)  translate(40rem) rotate(-360deg) rotateX(-65deg) translateZ(10rem) scale(.9) translatex(2rem);">
+                                    <img src="assets/img/6 - Copy.png" alt="">
+                                </div>
+                                <div class="colleague__carousel-card" id="8" data-pos="" data-scale=".8"
+                                    style="transform: rotate(405deg)  translate(40rem) rotate(-405deg) rotateX(-65deg) translateZ(10rem) scale(1.1) translatex(2rem);">
+                                    <img src="assets/img/7 - Copy.png" alt="">
+                                </div>
+
+                                <span class="colleague__carousel-next" id="next">&lt;<p></p></span>
+
+                                <span class="colleague__carousel-prev" id="prev">&gt;</span>
+
+                                <div class="colleague__carousel-center">
+                                    <img src="assets/img/kisspng-logo-coreldraw-cdr-cli_h.png" alt="">
+                                    <div class="colleague__carousel-center-card" id="1"
+                                        style="transform: rotate(90deg) translate(25rem) rotate(-90deg) rotateX(-65deg);">
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+
+                            <div class="teammate ">
+
+                                <div class="teammate__main d-flex justify-content-center">
+
+                                    <!-- قسمت مربوط به مدار وسطی -->
+                                    <div class="orbit">
+                                        <img srcset="assets/img/kisspng-logo-coreldraw-cdr-cli_ea.png 1x,assets/img/kisspng-logo-coreldraw-cdr-cli_ea@2x.png 2x"
+                                            alt="logo" class="orbit__logo">
+                                        <div class="orbit__container-small">
+                                            <div class="orbit__circle-small orbit__circle-small--1"></div>
+                                            <div class="orbit__circle-small orbit__circle-small--2"></div>
+                                            <div class="orbit__circle-small orbit__circle-small--3"></div>
+                                        </div>
+                                        <div class="orbit__half-circle orbit__half-circle--right"><button
+                                                class="orbit__half-circle-btn orbit__half-circle-btn--right"
+                                                onclick="rightState()" id="next"></button></div>
+                                        <div id="1"
+                                            class="orbit__circle orbit__circle--1 d-flex flex-column justify-content-center align-items-center orbitsize">
+                                            <img src="assets/img/bime-melat.png" class="orbitsize">
+                                        </div>
+                                        <div class="orbit__half-circle orbit__half-circle--left"><button
+                                                class="orbit__half-circle-btn orbit__half-circle-btn--left"
+                                                onclick="leftState()" id="prev"></button></div>
+                                        <div id="2"
+                                            class="orbit__circle orbit__circle--2 d-flex flex-column justify-content-center align-items-center orbitsize">
+                                            <img src="assets/img/oonternet-2875506002996.png" class="orbitsize">
+                                        </div>
+                                        <div id="3"
+                                            class="orbit__circle orbit__circle--3  d-flex flex-column justify-content-center align-items-center orbitsize">
+                                            <img srcset="assets/img/ID7.png 1x,assets/img/ID7@2x.png 2x" class="orbitsize">
+                                        </div>
+                                        <div id="4"
+                                            class="orbit__circle orbit__circle--4 d-flex flex-column justify-content-center align-items-center orbitsize">
+                                            <img srcset="assets/img/ID1.png 1x,assets/img/ID1@2x.png 2x" class="orbitsize">
+                                        </div>
+                                        <div id="5"
+                                            class="orbit__circle orbit__circle--5 d-flex flex-column justify-content-center align-items-center orbitsize">
+                                            <img srcset="assets/img/ID14.png 1x,assets/img/ID14@2x.png 2x" class="orbitsize">
+                                        </div>
+                                        <div id="6"
+                                            class="orbit__circle orbit__circle--6 d-flex flex-column justify-content-center align-items-center orbitsize">
+                                            <img srcset="assets/img/ID21.png 1x,assets/img/ID21@2x.png 2x" class="orbitsize">
+                                        </div>
+                                        <div id="7"
+                                            class="orbit__circle orbit__circle--7 d-flex flex-column justify-content-center align-items-center orbitsize">
+                                            <img srcset="assets/img/ID3.png 1x,assets/img/ID3@2x.png 2x" class="orbitsize">
+                                        </div>
+                                        <div id="8"
+                                            class="orbit__circle orbit__circle--8 d-flex flex-column justify-content-center align-items-center orbitsize">
+                                            <!-- <img srcset="assets/img/ID6.png 1x,assets/img/ID6@2x.png 2x" class="orbitsize"> -->
+                                            <img src="assets/img/unnamed.png" class="orbitsize">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- قسمت مربوط به توضیحات درباره هرکدام از بیمه ها -->
+                                <!-- <div class="teammate__introduction flex column justi-around align-center">
+                                    <p class="teammate__text">بیمه ملت در زمینه فروش تمام محصولات بیمه‌ای فعالیت کرده و با داشتن
+                                        8 شعبه و حدود 2000 نمایندگی فعال، خدمات متنوعی ارائه می‌دهد. توانگری مالی بیمه ملت در
+                                        رتبه یک قرار دارد. در نتیجه این شرکت توانایی مطلوبی در پرداخت خسارات مورد تعهد داراست.
+                                        همچنین بر اساس آخرین گزارش منتشر شده، رضایت مشتریان از بیمه ملت رتبه 10 را کسب کرده و
+                                        1.6% فروش کل صنعت بیمه متعلق به این شرکت است.</p>
+                                    <button class="teammate__btn">صفحه بیمه</button>
+                                </div> -->
+                            </div>
+
+
+
+                        </div>
+                        <div class="row mx-lg-5 pr-1  d-flex justify-content-center mb-5 mt-lg-5">
+                            <div class="col-12 mt-lg-5">
+                                <div class="colleague__cont  w-80 mt-lg-5">
+                                    <p class="colleague__cont-text" id='text'></p>
+                                    <a href="#" class="colleague__cont-button mr-auto">صفحه بیمه</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="colleague__text ">
+                            <p class="1 d-none">بیمه ملت در زمینه فروش تمام محصولات بیمه ای فعالیت داشته و با داشتن بیش
+                                از 6 شعبه در سراسر ایران خدمات بسیاری ارائه میدهد. </p>
+                            <p class="2 d-none">بیمه پاسارگاد در زمینه فروش تمام محصولات بیمه ای فعالیت داشته و با داشتن
+                                بیش از 6 شعبه در سراسر ایران خدمات بسیاری ارائه میده</p>
+                            <p class="3 d-none">بیمه پارسیان در زمینه فروش تمام محصولات بیمه ای فعالیت داشته و با داشتن
+                                بیش از 6 شعبه در سراسر ایران خدمات بسیاری ارائه میده</p>
+                            <p class="4 d-none">بیمه رازی در زمینه فروش تمام محصولات بیمه ای فعالیت داشته و با داشتن بیش
+                                از 6 شعبه در سراسر ایران خدمات بسیاری ارائه میده</p>
+                            <p class="5 d-none">بیمه نوین در زمینه فروش تمام محصولات بیمه ای فعالیت داشته و با داشتن بیش
+                                از 6 شعبه در سراسر ایران خدمات بسیاری ارائه میده</p>
+                            <p class="6 d-none">بیمه دانا در زمینه فروش تمام محصولات بیمه ای فعالیت داشته و با داشتن بیش
+                                از 6 شعبه در سراسر ایران خدمات بسیاری ارائه میده</p>
+                            <p class="7 d-none">بیمه دی در زمینه فروش تمام محصولات بیمه ای فعالیت داشته و با داشتن بیش
+                                از 6 شعبه در سراسر ایران خدمات بسیاری ارائه میده</p>
+                            <p class="8 d-none">بیمه ایران در زمینه فروش تمام محصولات بیمه ای فعالیت داشته و با داشتن
+                                بیش از 6 شعبه در سراسر ایران خدمات بسیاری ارائه میده</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+           
+        </div>
+        <div class="row">
+            <div class="footer__mainlogo  d-none d-lg-flex   justify-content-center align-items-center">
+                <img src="assets/img/kisspng-logo-coreldraw-cdr-cli_ea.png" alt="" class="">
+        
+            </div>
+        </div>
+    </main>
+    
+    
+    <footer class="footer">
+       
+        <div class="custom-shape-divider-top-1603987735 footer__shap d-none d-lg-block">
+
+           
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+                    
+            </svg>
+
+        </div>
+        <div class="container-fluid ">
+            
+            <div class="row  ">
+                
+                <div class=" col-12 d-block d-lg-none footer__bimsa">
+                    <p class="pt-2">بیمسا</p>
+                </div>
+                <div class="col-4 order-lg-0 order-1">
+
+
+                    <ul class=" list-unstyled footer__list  pb-5">
+                        <li class="list-item text-white"><a href="#"> بیمه شخص ثالث</a> </li>
+                        <li class="list-item text-white"><a href="#"> بیمه بدنه </a></li>
+                        <li class="list-item text-white"><a href="#">بیمه آتش سوزی</a></li>
+                        <li class="list-item text-white"><a href="#">همکاری با ما</a></li>
+                        <li class="list-item text-white"><a href="#">تماس با ما</a></li>
+                        <li class="list-item text-white"><a href="#">درباره ما</a></li>
+                        <li class="list-item text-white"><a href="#"> فرصت های شغلی</a></li>
+                    </ul>
+                </div>
+                <div class="col-4  order-lg-1 order-2">
+
+                    <div class="footer__img-top d-flex justify-content-around">
+                        <img src="assets/img/_temp-logo-samandehi.png" class="" alt="" />
+                        <img src="assets/img/_temp-logo-enamad.png" class="" alt="" />
+                    </div>
+
+                    <div
+                        class="footer__img-bottom d-flex justify-content-around  align-items-center flex-column flex-lg-row">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+                        <!-- <i class="fab fa-twitter d-flex align-self-center justify-content-center" aria-hidden="true"></i> 
+                        <i class="fab fa-twitter d-flex align-self-center justify-content-center" aria-hidden="true"></i>
+                        <i class="fab fa-instagram d-flex align-self-center justify-content-center" aria-hidden="true"></i>
+                        <i class="fab fa-telegram-plane d-flex align-self-center justify-content-center"></i> -->
+                    </div>
+                </div>
+                <div class="col-4 order-lg-2 order-0 pb-5">
+
+                    <ul class=" list-unstyled footer__list">
+                        <li class="list-item text-white"><a href="#"> ورود به پنل</a> </li>
+                        <li class="list-item text-white"><a href="#">شرایط و قوانین</a></li>
+                        <li class="list-item text-white"><a href="#">سوالات متداول</a></li>
+                        <li class="list-item text-white"><a href="#">همکاری با ما</a></li>
+                        <li class="list-item text-white"><a href="#">تماس با ما</a></li>
+                        <li class="list-item text-white"><a href="#">درباره ما</a></li>
+                        <li class="list-item text-white"><a href="#"> فرصت های شغلی</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer__copy ">
+                    <p class="pt-3">تمام حقوق این سایت متعلق به شرکت بیمسا است</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script> -->
+    <!--     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script> -->
+
+
+
+</body>
+
+</html>

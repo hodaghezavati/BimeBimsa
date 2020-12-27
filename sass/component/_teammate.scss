@@ -1,0 +1,87 @@
+.teammate{
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+
+    @include respond(phone){ 
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    &__heading{
+        @include respond(phone){ 
+            font-size: 3.5rem;
+            margin-right: 3rem;
+            margin-bottom: 5rem !important;
+            color: $color-primary;
+        }
+    }
+
+    &__main{
+        width: 100%;
+
+        @include respond(phone){ 
+            margin: 0 !important;
+        }
+        @include respond(phone-small){ 
+            margin: 0 !important;
+        }
+    }
+
+    &__introduction{
+        width: 80%;
+        height: 18rem;
+        background-color: rgba($color: $color-grey-dark, $alpha: .2);
+        border-radius: 2rem;
+
+        @include respond(phone){ 
+            margin-right: 1rem;
+            width: 45%;  
+            height: 50rem;
+            background-color: transparent;
+        }
+    }
+    
+    &__text{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $color-grey-dark-2;
+        direction: rtl;
+        text-align: justify;
+        padding: 1rem 2rem;
+
+        @include respond(phone){ 
+            font-size: 1.7rem;
+        }
+        @include respond(phone-small){ 
+            font-size: 1.5rem;
+        }
+    }
+
+    &__btn{
+        border-radius: 1rem;
+        border: none;
+        color: #fff;
+        width: 13rem;
+        height: 3rem;
+        font-size: 1.3rem;
+        font-weight: 100;
+        background-color: rgba($color: $color-primary, $alpha: .55);
+        transition: all .3s;
+
+        &:hover{
+            background-color: $color-primary;
+        }
+
+        @include respond(phone){ 
+            width: 20rem;
+            height: 6rem;
+            font-size: 2.2rem;
+        } 
+        @include respond(phone-small){ 
+            width: 18rem;
+            height: 4rem;
+        } 
+    }     
+    
+}

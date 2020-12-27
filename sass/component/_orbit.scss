@@ -1,0 +1,334 @@
+.orbit{
+    border-radius: 70%;
+    width: 80rem;
+    height: 25rem;
+    border: 3px solid $color-primary;
+    position: relative;
+    transition: all 2s;
+
+
+    @include respond(tab-land){ width: 65rem;}
+    @include respond(tab-port){ width: 55rem;}
+    @include respond(smallest){ width: 45rem;}
+
+    @include respond(phone){ 
+        position: absolute;
+        top: 5%;
+        right: 62%; 
+        width: 55rem;
+        height: 50rem;
+    }
+
+    @include respond(phone-small){ 
+        position: absolute;
+        top: 15%;
+        right: 58%; 
+        width: 45rem;
+        height: 45rem;
+    }
+
+
+    // لوگو بیمسا که وسط مدار قرار دارد
+    &__logo{
+        height: 7rem;
+        width: 7rem;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+
+        @include respond(phone){ display: none; }
+    }
+
+    // استایل مربوط به همه ی دایره ی بیمه ها
+    &__circle{
+        background-color: #f7f7f7;
+        border-radius: 50%;
+        position: absolute;
+        transition: all 1s;
+
+        // استایل دایره ی وسطی در دسکتاپ
+        &--1{  
+            width: 14rem;
+            height: 14rem;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+
+            img{
+                width: 11rem;
+                height: 11rem;
+                transition: all 1s;
+            }
+
+            // استایل دایره وسطی در موبایل
+            @include respond(phone){ 
+                width: 15rem;
+                height: 15rem;
+                top: 20%;
+                left: 98%;
+            }
+        }
+        &--2{            
+            width: 10rem;
+            height: 10rem;
+            top: 43%;
+            left: 13%;
+            transform: translate(-15%, 55%);
+            
+            img{
+                width: 7rem;
+                height: 7rem;
+                transition: all 1s;
+            }
+
+            @include respond(phone){ 
+                width: 11rem;
+                height: 11rem;
+                top: 69%;
+                left: 72%;
+            }
+        }
+        &--3{
+            width: 9rem;
+            height: 9rem;
+            top: -5%;
+            left: 6%;
+            transform: translate(-50%, 50%);
+            
+            img{
+                width: 6.5rem;
+                height: 6.5rem;
+                transition: all 1s;
+            }
+
+            @include respond(phone){ 
+                width: 9rem;
+                height: 9rem;
+                top: -19%;
+                left: 52%;
+            }
+        }
+        &--4{
+            width: 6.5rem;
+            height: 6.5rem;
+            left: 30%;
+            transform: translate(-50%, -35%);
+            
+            img{
+                width: 4.5rem;
+                height: 4.5rem;
+                transition: all 1s;
+            }
+
+            @include respond(phone){ 
+                width: 11rem;
+                height: 11rem;
+                top: 88%;
+                left: 23%;
+            }
+        }
+        &--5{
+            width: 5rem;
+            height: 5rem;
+            left: 52%;
+            transform: translate(-50%, -58%);
+            
+            img{
+                width: 3.5rem;
+                height: 3.5rem;
+                transition: all 1s;
+            }
+
+            @include respond(phone){ 
+                width: 15rem;
+                height: 15rem;
+                top: 50%;
+                left: 0%;
+            }
+        }
+        &--6{
+            width: 6.5rem;
+            height: 6.5rem;
+            left: 65%;
+            transform: translate(50%, -33%);
+            
+            img{
+                width: 4.5rem;
+                height: 4.5rem;
+                transition: all 1s;
+            }
+
+            @include respond(phone){ 
+                width: 11rem;
+                height: 11rem;
+                top: 5%;
+                left: 0%;
+            }
+        }
+        &--7{            
+            width: 9rem;
+            height: 9rem;
+            top: -3%;
+            left: 95%;
+            transform: translate(-50%, 50%);
+            
+            img{
+                width: 6.5rem;
+                height: 6.5rem;
+                transition: all 1s;
+            }
+
+            @include respond(phone){ 
+                width: 9rem;
+                height: 9rem;
+                top: 80%;
+                left: 52%;
+            }
+        }
+        &--8{
+            width: 10rem;
+            height: 10rem;
+            top: 43%;
+            left: 79%;
+            transform: translate(-15%, 55%);
+
+            img{
+                width: 7rem;
+                height: 7rem;
+                transition: all 1s;
+            }
+
+            @include respond(phone){ 
+                width: 11rem;
+                height: 11rem;
+                top: -15%;
+                left: 72%;
+            }
+        }
+    }
+
+    // استایل مربوط به مدار کوچک دور لوگو بیمسا
+    &__container-small{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 15rem;
+        height: 6.5rem;
+        border: 2px solid $color-primary;
+        border-radius: 50%;
+
+        @include respond(phone){ 
+            width: 15rem;
+            height: 13rem;
+        }
+    }
+
+    &__circle-small{
+        width: 1.7rem;
+        height: 1.7rem;
+        background-color: $color-yellow;
+        border-radius: 50%;
+        position: absolute;
+        transition: all .8s;
+
+        &--1{
+            top: -5%;
+            left: 15%;
+
+            @include respond(phone){ 
+                top: 0;
+                left: 72%;
+            }
+        }
+
+        &--2{
+            top:78%;
+            left: 20%;
+
+            @include respond(phone){ 
+                top: 90%;
+                left: 60%;
+            }
+        }
+        
+        &--3{
+            top: 50%;
+            left: 90%;
+
+            @include respond(phone){ 
+                top: 50%;
+                left: 95%;
+            }
+        }
+    }
+
+    // استایل مربوط به دکمه هایی که حرکت دایره ها به چپ و راست را انجام میدهند
+    &__half-circle{
+        width: 4rem;
+        height: 8.5rem;
+        position: absolute;
+        transform: translate(-50%, 50%);
+        background-color: transparent;
+        border: 2px solid gray;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 9999;
+
+        @include respond(phone){ 
+            display: none;
+        }
+
+        &--right{
+            top: 65%;
+            left: 65%;
+            border-bottom-right-radius: 100px;
+            border-top-right-radius: 100px;
+            border-left: 0;
+        }
+
+        &--left{
+            top: 65%;
+            left: 35%;
+            border-bottom-left-radius: 100px;
+            border-top-left-radius: 100px;
+            border-right: 0;
+        }
+    }
+
+    &__half-circle-btn{
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        border-radius: 50%;
+        border: none;
+        outline:none;
+
+
+        &--right{
+            left: 60%;
+            top: 30%;
+            @include set-background(url(../../assets/img/right.png) , cover);
+
+            &:hover{
+                cursor: pointer;
+                background-image: linear-gradient(rgba($color-yellow, 0.6), rgba($color-yellow, 0.6)), url(../../assets/img/right.png);
+            }
+        }
+
+        &--left{
+            left: -37%;
+            top: 30%;
+            @include set-background(url(../../assets/img/left.png) , cover);
+
+            &:hover{
+                cursor: pointer;
+                background-image: linear-gradient(rgba($color-yellow, 0.6), rgba($color-yellow, 0.6)), url(../../assets/img/left.png);
+            }
+        }
+    }
+
+}

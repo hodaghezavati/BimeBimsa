@@ -1,0 +1,66 @@
+button, a{
+    outline: none !important;
+}
+
+.main{
+    height:auto;
+    background-color: $body_background;
+    position: relative;
+    
+}
+.content{
+    height:auto;
+    background-color: $white ;
+    position: relative;
+    overflow: hidden;
+    top:-10rem;
+    animation-name: moveinbottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+   
+
+    @media (max-width: 991.98px) {
+        top:0;
+    }
+    border-radius: 5rem;
+    // z-index:3000;
+
+    &__button{
+        color:$white;
+        font-size: 1.8rem;
+        background-color: $blue;
+        border:1px solid $blue;
+        border-radius: 1rem;    
+    } 
+
+    &__heading{ 
+        line-height: 4rem;
+        text-align: center;
+        color:$blue;
+    }
+
+
+    &__services{
+        font-size:1.8rem;
+
+
+    }
+   
+ 
+    &__insurance{
+        
+        &-box{
+            text-align: right ;
+        }
+
+        &-label{
+           
+        }
+
+
+        &-divider{
+            width:80%;
+            margin:0 auto;
+        }
+    }
+} 

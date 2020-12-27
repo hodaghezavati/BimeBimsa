@@ -1,0 +1,132 @@
+.navmobile__mainicon{
+    // z-index: 999999999;
+    position: relative;
+
+}
+    
+
+.navigation-mobile{
+    width: 100%;
+    height: 100vh;
+    // background-color: rgba($color: #000000, $alpha: .9);
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    left: 100%;
+    transition: all .6s;
+    // display: none;
+
+    @include respond(phone-small){ display: inline; }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+    }
+
+    &:target &__content{
+        visibility: visible;
+        transform: translate(0);
+    }
+
+    &__content{
+        width: 85%;
+        height: 100vh;
+        transform: translate(100% , 0);
+        background-color: #ffffff;
+        visibility: hidden;
+        transition: all .6s;
+    }
+
+    &__header{
+        height: 15rem;
+        width: 100%;
+        background-image: url(../../assets/img/blue.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+    
+    }
+
+    &__login-btn{
+        height: 6rem;
+        width: 25rem;
+        border:1.5px solid $color-grey-dark-2;
+        border-radius: 1.5rem;
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        transform: translate(-35% , -20%);
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: $color-grey-dark-2;
+
+        @include respond(phone-small){  
+            height: 5rem;
+            width: 20rem;
+            top: 25%;
+        }
+    }
+
+    &__close{
+        float: right;
+        margin: 2rem;
+        transition: all 1s;
+    }
+
+    &__close:active &__content{
+        transform: translate(100% , 0);
+    }
+
+    &__nav{
+        width: 100%;
+        direction: rtl;
+        height: 90vh;
+        overflow: scroll;
+        
+        &::-webkit-scrollbar {
+            width: 2rem;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $color-yellow-light;
+            height: 70%; 
+            border-top-right-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+        }
+
+        @include respond(phone-small){ margin-top: -5rem; }
+        
+    }
+    &__list{
+        text-align: right;
+        margin-bottom: 3rem;
+
+        
+    }
+    &__item{
+        margin: 4rem 2.5rem;
+        direction: ltr;
+    }
+ 
+    &__icon{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $color-grey-dark;
+        padding-right: 2rem;
+    }
+
+    &__separator{
+        border-top: 2px solid $color-primary;
+        width: 100%;
+    }
+
+}

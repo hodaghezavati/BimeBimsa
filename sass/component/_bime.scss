@@ -1,0 +1,42 @@
+.bime{
+
+    border-radius: 3rem;
+    box-shadow: 0 1rem 1rem rgba($black, 0.2);
+    
+    @media (min-width: 1200px) { margin-bottom: 10rem; }
+    &__top{
+        background-color: $blue; 
+    }
+    &__select{
+        border: 1px solid $blue;
+        box-shadow: 0 1rem 1rem rgba($black, 0.2);
+        border-radius: 1rem;
+        font-size:1.4rem;
+        color:$blue;
+    }
+    &__bottom{ 
+
+    }
+    &-label{
+        font-size:1.6rem;
+        color:$blue;
+    }
+    &-box{
+        
+    }
+
+    &__filter{
+        @media (max-width: 991.98px) { 
+            text-align: right;
+            box-shadow: 0 1rem 1rem rgba($black, 0.2);
+            border-radius: 1rem;
+        }
+    }
+} 
+
+.switch{
+
+    &__text{
+        font-size: 1.5rem;
+    }
+}

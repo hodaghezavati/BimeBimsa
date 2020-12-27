@@ -1,0 +1,42 @@
+.sidebar{
+    color:$grey;
+
+    &__header{
+       
+        font-size:1.8rem;
+    }
+
+    &__num{
+        border-radius: 2rem; 
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);  
+    }
+
+    &__bottom{
+        border-radius: 2rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+        &-label{
+            font-size: 1.4rem;
+            font-weight:500;
+
+            & img{
+                width:5rem;
+                height:auto;
+            }
+        }
+
+        & > img{
+            width:9rem;
+            height:auto;
+            margin-bottom: 2rem;
+        }
+        &-text{
+            font-size: 1.6rem;
+            color:$blue;
+        }
+        &-input{
+            width: 2rem !important;
+            height: 2rem !important;
+        }
+        
+    }
+}   

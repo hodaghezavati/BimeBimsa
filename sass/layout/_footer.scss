@@ -1,0 +1,137 @@
+.footer{
+    background-color: $blue;
+    position: relative;
+    height:auto;
+    z-index: 5100;
+    
+
+    &__copy{
+        background-color: $yellow;
+        border-radius: 2rem 2rem 0 0;
+        text-align: right;
+        & p{
+            padding-right: 2rem;
+            color:$white;
+            line-height:4rem;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 991.98px) {
+            background-color:  $blue;
+            border-top: 1px solid $white;
+            border-radius: 0;
+            margin-top: 2rem !important;
+        }
+    }
+    &__mainlogo{
+        
+        // 
+        position: absolute;
+        bottom:-20rem;
+        left:50%;
+        transform: translate(-50%,-50%);
+        z-index:99999;
+        & img{
+            width:12rem;
+          
+            height:auto;
+        }
+      
+       
+       
+    }
+    
+
+    @media (max-width: 991.98px) {
+        height:auto;
+        
+    }
+    &__img{
+
+        &-top{
+            margin-top: 30rem;
+            margin-bottom: 5rem;
+        }
+        &-bottom i{
+            width:5rem;
+            height:5rem;
+            border-radius: 50%;
+            background-color: $white;
+            color:$blue;
+            font-size: 3rem;
+            flex-direction: column;
+         text-align: center;
+
+        }
+    }
+&__bimsa{
+    text-align: center;
+    color:$white;
+    background-color: $blue3;
+    font-size: 1.4rem;
+    border-top: 3rem solid $blue2; 
+    & p{
+        font-weight: 900;
+    }
+}
+    &__list{
+
+        margin-top:30rem;
+        text-align:center;
+        font-size: 1.8rem; 
+        & li{
+           
+        }
+        & a{
+            text-decoration: none;
+            color:$white;
+            line-height: 4rem;
+        }
+    } 
+
+
+    @media (max-width: 991.98px) {
+        &__list,&__img-top{
+            margin-top:5rem;
+        }
+        &__img-top img{
+            width:50%;
+            height:auto;
+        }
+
+        &__list{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+svg{
+    padding-top: 8rem;
+}
+.custom-shape-divider-top-1603987735 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);  
+    z-index:4000;
+} 
+
+.custom-shape-divider-top-1603987735 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 303px;
+    transform: rotateY(180deg); 
+    z-index:4000;
+}
+
+.custom-shape-divider-top-1603987735 .shape-fill {
+    fill: $body_background;
+    z-index:4000;
+}

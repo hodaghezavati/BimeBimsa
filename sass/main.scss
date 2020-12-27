@@ -1,0 +1,46 @@
+@import "abstracts/functions";
+@import "abstracts/mixin";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/typography";
+@import "base/base";
+@import "base/utilities";
+
+
+@import "component/options"; 
+@import "component/colleague";
+@import "component/insurance";
+@import "component/conversation"; 
+@import "component/step";   
+@import "component/card";
+@import "component/bime";
+@import "component/teammate";
+@import "component/orbit"; 
+@import "component/fixed-circle"; 
+@import "component/select2"; 
+
+
+// @import "components/popup";
+
+
+// @import "layout/conversation"; 
+@import "layout/header";
+@import "layout/footer";  
+@import "layout/content"; 
+@import "layout/nav"; 
+// @import "layout/bime"; 
+@import "layout/sidebar"; 
+@import "layout/tab";  
+@import "layout/maincontent";   
+@import "layout/navmobile";   
+
+// @import "layout/navigation";
+// @import "layout/navmobile";
+// @import "layout/grid";
+// @import "layout/footer";
+// @import "layout/content";
+
+
+// @import "pages/home";
+

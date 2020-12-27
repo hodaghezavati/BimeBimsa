@@ -1,0 +1,21 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl !important; }
+
+html {
+  font-size: 62.5%;
+  direction: rtl; }
+
+body {
+  box-sizing: border-box;
+  direction: rtl; }
+
+@font-face {
+  font-family: Vazir;
+  src: url("Vazir.woff");
+  font-weight: normal; }
+
+body {
+  font-family: Vazir; }

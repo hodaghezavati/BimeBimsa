@@ -1,0 +1,103 @@
+.tabs{
+    
+    &__more{
+        cursor:pointer;
+    }
+    &__link{
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: $grey;
+    }
+
+    &__img{
+        width:10rem;
+        height:auto;
+    }
+    &__item{
+        margin-right: 5rem;
+        @media (max-width: 991.98px) {
+            margin-right: 1rem;
+        }
+        &:hover{
+            background-color: $blue;
+            border-radius: .5rem; 
+        
+        }
+        &:hover a{
+            color: $white;
+        }
+    }
+    &__list{
+        border-radius: 2rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);    
+
+    }
+
+    &__result{
+        border-radius: 2rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);   
+        position: relative;
+
+        &-link{
+            position: absolute;
+            bottom:0;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        &-btn{
+            width:50%;
+            margin:0 auto;
+        }
+         &-aghsat{
+            
+            &1{
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+                border-radius: 2rem;
+                font-size:1.5rem;
+                padding:2rem;
+                &:not(:first-child){
+                    margin-right:2rem;
+
+                    @media (max-width: 991.98px) {
+                        margin-right:0;
+                    }
+
+                }
+            }
+         }
+
+        &-p{
+            font-size: 1.6rem;
+            line-height: 3.5rem;
+            margin-right: 1rem;
+        }
+
+        &-link{
+            text-decoration: none;
+            font-size: 1.8rem;
+        }
+        &-price{
+            font-size: 1.8rem;
+        }
+        &-btn{
+            font-size: 1.4rem !important; 
+            border-radius: 1rem !important;
+            
+            @media (max-width: 911.98px) { 
+                &:last-child{
+                    margin-bottom: 3rem;
+                }
+            
+             }
+        }
+
+        &-hide{
+            font-size: 1.8rem;
+            text-align: right;
+        }
+
+        &-hidee{
+            transition:all 1s ease-in-out;
+        }
+    }
+}

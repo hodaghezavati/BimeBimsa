@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='assets/css/icon-font.css'>
+    </link>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.js"></script>
+
+    <script src="assets/js/js.js"></script>
+
+    <!-- <script src="assets/js/jquery.js"></script> -->
+    <!-- <script src="assets/js/select2.full.js"></script> -->
+    <!-- <link rel="stylesheet" href="/assets/css/select2.css"> -->
+
+    <!-- <script type="text/javascript" src="assets/js/function.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/jqueryFunction.js"></script> -->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <!-- 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+
+
+    <title>Bimsa</title>
+</head>
+
+<body>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+
+        <div class="container">
+            <a href="#menu" class="navmobile__mainicon d-flex d-lg-none"> <img src="assets/img/menu (1)@2x.png"
+                    class="navbar-toggler-icon navbar__mobileicon" id="menu_toggle" /></a>
+
+            <nav class="navigation-mobile flex column justi-around align-end " id="menu">
+                <div class="navigation-mobile__content">
+                    <div class="navigation-mobile__header">
+                        <a href="#header"><img class="navigation-mobile__close" src="assets/img/close (1).png"></a>
+                        <button class="navigation-mobile__login-btn">ورود/عضویت</button>
+                    </div>
+                    <div class="navigation-mobile__nav">
+                        <ul class="navigation-mobile__list list-unstyled">
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_11.png 1x,assets/img/Mask_Group_11@2x.png 2x"
+                                    alt="bime shakhs sales"><a class="navigation-mobile__link" href="#">بیمه شخص
+                                    ثالث</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_13.png 1x,assets/img/Mask_Group_13@2x.png 2x"
+                                    alt="bime badane"><a class="navigation-mobile__link" href="#">بیمه بدنه</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_14.png 1x,assets/img/Mask_Group_14@2x.png 2x"
+                                    alt="bime mosaferti"><a class="navigation-mobile__link" href="#">بیمه مسافرتی</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_9.png 1x,assets/img/Mask_Group_9@2x.png 2x"
+                                    alt="bime darman va corona"><a class="navigation-mobile__link" href="#">بیمه درمان و
+                                    کرونا</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_12.png 1x,assets/img/Mask_Group_12@2x.png 2x"
+                                    alt="bime omr"><a class="navigation-mobile__link" href="#">بیمه عمر</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_10.png 1x,assets/img/Mask_Group_10@2x.png 2x"
+                                    alt="bime motor "><a class="navigation-mobile__link" href="#">بیمه‌ موتور سیکلت</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_15.png 1x,assets/img/Mask_Group_15@2x.png 2x"
+                                    alt="bime sazmani"><a class="navigation-mobile__link" href="#">بیمه‌ سازمانی</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Mask_Group_16.png 1x,assets/img/Mask_Group_16@2x.png 2x"
+                                    alt="bime atash soozi"><a class="navigation-mobile__link" href="#">بیمه‌ آتش
+                                    سوزی</a>
+                            </li>
+                            <hr class="navigation-mobile__separator">
+                            <li class="navigation-mobile__item  flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/024---Friendship.png 1x,assets/img/024---Friendship@2x.png 2x"
+                                    alt="bime motor "><a class="navigation-mobile__link" href="#">بیمه های همکار</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/Page-1.png 1x,assets/img/Page-1@2x.png 2x" alt="bime sazmani"><a
+                                    class="navigation-mobile__link" href="#">وبلاگ</a>
+                            </li>
+                            <li class="navigation-mobile__item flex r-reverse justi-start align-center">
+                                <img class="navigation-mobile__icon"
+                                    srcset="assets/img/work.png 1x,assets/img/work@2x.png 2x" alt="bime atash soozi"><a
+                                    class="navigation-mobile__link" href="#">همکاری با بیمسا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-flex flex-column flex-lg-row text-center w-20  order-1 order-lg-0">
+                <img srcset="assets/img/kisspng-logo-coreldraw-cdr-cli_h.png 1x,assets/img/kisspng-logo-coreldraw-cdr-cli_h@2x.png 2x"
+                    alt="logo" class="d-inline navbar__logo">
+                <span class=" navbar-brand d-inline align-middle align-self-center bim-font">بیمسا</span>
+            </div>
+
+            <div class="collapse navbar-collapse  justify-content-center navbar__menudesktop  order-lg-1">
+
+                <ul class="navbar-nav  mt-2 mt-lg-0">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">انواع بیمه ها </a>
+                    </li>
+                    <li class="nav-item  px-3">
+                        <a class="nav-link" href="#">فروش</a>
+                    </li>
+                    <li class="nav-item  px-3">
+                        <a class="nav-link " href="#">بیمه های همکار</a>
+                    </li>
+                    <li class="nav-item  px-3">
+                        <a class="nav-link " href="#">بلاگ</a>
+                    </li>
+                    <li class="nav-item  px-3">
+                        <a class="nav-link " href="#">تماس با ما</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="d-flex flex-row w-25 justify-content-start  w-lg-25  order-2 order-lg-2">
+                <div class="d-flex d-lg-none ">
+                    <img src="assets/img/account@2x.png" alt="" class="navbar__mobileicon">
+                </div>
+                <div class="d-none d-lg-block">
+                    <img srcset="assets/img/person.png 1x,assets/img/person@2x.png 2x" alt="user photo"
+                        class="d-inline align-middle ">
+                    <span class="d-inline align-middle bim-font">حساب کاربری</span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </nav>
+
+
+    <!-- دایره ثابت مربوط به تمدید -->
+    <a href="#"
+        class="fixed-circle home fixed-circle--left d-none d-lg-flex flex-column  align-items-center justify-content-center">
+        <img srcset="assets/img/service4.png 1x,assets/img/service4@2x.png 2x" alt="tamdid"
+            class="fixed-circle__extension-photo">
+        <span class="fixed-circle__extension-text">تمدید</span>
+    </a>
+    <!-- دایره ثابت مربوط به گفتگو با ما -->
+    <a href="#"
+        class="fixed-circle home fixed-circle--right d-none d-lg-flex flex-column align-items-center justify-content-center">
+        <img srcset="assets/img/service3.png 1x,assets/img/service3@2x.png 2x" alt="coverstion"
+            class="fixed-circle__coverstion-photo">
+        <span class="fixed-circle__coverstion-text">گفتگو با ما</span>
+    </a>
+
+
+    <header class="header position-relative">
+        <div class="custom-shape-divider-bottom-1604234456 d-none d-lg-block">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="card__contain mt-5 position-relative justify-content-between">
+                    <div class="cardd px-0">
+                        <div class="card__header">
+                            <div class="card-header text-center text-white">
+                                بیمه شخص ثالث
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex flex-lg-row flex-column card__body p-lg-5 p-1 ">
+                            <div class="col-lg-4 col-12 order-3 order-lg-1 ">
+
+                                <div class=" d-flex justify-content-center   card__img-container">
+                                    <div class="card__img-top ">
+                                        <img class="card__img d-none d-lg-block " src="assets/img/Group261.png" alt="">
+                                        <div class="card__btn mt-lg-5 mt-1  ">
+                                            <p class="card__btn-text text-center d-none d-xl-block">استعلام قیمت</p>
+                                            <button type="button" class="" id="prev_level">مرحله قبل</button>
+                                            <button type="button" class="" id="next_level">مرحله بعد</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="2containers d-flex flex-row order-1 order-lg-2">
+                                <div class="col-lg-5 col-xl-5 col-6">
+
+
+                                    <div class="card__select-container">
+
+                                        <div class="d-flex justify-content-between">
+                                            <p class="text-white d-flex align-items-center switch__text">بیمه نامه خسارت
+                                                دارد </p>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+
+                                            </label>
+
+                                        </div>
+
+
+
+
+                                        <div class="card__select mt-lg-5 mt-2">
+                                            <label
+                                                class="card__select-label text-white d-flex justufy-content-end mb-1">نحوه
+                                                تکرار</label>
+                                            <div class="con">
+                                                <select class="select2 d-flex w-100 py-3" name="specialty">
+                                                    <option value=""> تخصص </option>
+                                                    <option value=""> آپروتینین </option>
+                                                    <option value="">آتراکوریوم</option>
+                                                    <option value=""> آتروپین </option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="card__select mt-lg-5 mt-2">
+                                            <label
+                                                class="card__select-label text-white d-flex justufy-content-end mb-1">نحوه
+                                                تکرار</label>
+                                            <div class="con">
+                                                <select class="select2 d-flex w-100 py-3" name="specialty">
+                                                    <option value=""> تخصص </option>
+                                                    <option value=""> آپروتینین </option>
+                                                    <option value="">آتراکوریوم</option>
+                                                    <option value=""> آتروپین </option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="card__select mt-lg-5 mt-2">
+                                            <label
+                                                class="card__select-label text-white d-flex justufy-content-end mb-1">نحوه
+                                                تکرار</label>
+                                            <div class="con">
+                                                <select class="select2 d-flex w-100 py-3" name="specialty">
+                                                    <option value=""> تخصص </option>
+                                                    <option value=""> آپروتینین </option>
+                                                    <option value="">آتراکوریوم</option>
+                                                    <option value=""> آتروپین </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__select-container ">
+                                        <div class="card__select mt-lg-5 mt-2">
+                                            <label
+                                                class="card__select-label d-flex justufy-content-end text-white mb-1">نحوه
+                                                تکرار</label>
+                                            <div class="con ">
+                                                <select class="select2 d-flex w-100 py-3" name="specialty">
+                                                    <option value=""> تخصص </option>
+                                                    <option value=""> آپروتینین </option>
+                                                    <option value="">آتراکوریوم</option>
+                                                    <option value=""> آتروپین </option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="card__select mt-lg-5 mt-2 ">
+                                            <label
+                                                class="card__select-label d-flex justufy-content-end text-white mb-1">نحوه
+                                                تکرار</label>
+                                            <div class="con">
+                                                <select class="select2 d-flex w-100 py-3" name="specialty">
+                                                    <option value=""> تخصص </option>
+                                                    <option value=""> آپروتینین </option>
+                                                    <option value="">آتراکوریوم</option>
+                                                    <option value=""> آتروپین </option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="card__select mt-lg-5 mt-2">
+                                            <label
+                                                class="card__select-label d-flex justufy-content-end text-white mb-1">نحوه
+                                                تکرار</label>
+                                            <div class="con">
+                                                <select class="select2 d-flex w-100 py-3" name="specialty">
+                                                    <option value=""> تخصص </option>
+                                                    <option value=""> آپروتینین </option>
+                                                    <option value="">آتراکوریوم</option>
+                                                    <option value=""> آتروپین </option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="card__select mt-lg-5 mt-2">
+                                            <label
+                                                class="card__select-label text-white d-flex justufy-content-end mb-1">نحوه
+                                                تکرار</label>
+                                            <div class="con">
+                                                <select class="select2 d-flex w-100 py-3" name="specialty">
+                                                    <option value=""> تخصص </option>
+                                                    <option value=""> آپروتینین </option>
+                                                    <option value="">آتراکوریوم</option>
+                                                    <option value=""> آتروپین </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-7 col-6">
+                                    <div class="card__items overflow-hidden card__box">
+
+                                        <div class="card__item card__boxes 1 ">
+                                            <div class="row w-100 m-0">
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-lg-4 py-0 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/12.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بنز</p>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+
+                                        <div class="card__item  card__boxes 2">
+                                            <div class="row w-100 mx-0">
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6 col-lg-3 px-0">
+                                                    <div
+                                                        class="card__items-item py-4 px-1 d-flex text-center flex-column justify-content-center align-items-center">
+                                                        <img src="assets/img/ID7.png" alt="">
+                                                        <p class="card__items-text mt-4 text-secondary">بیمه ایران</p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+    <main class="main ">
+
+        <div class="container">
+            <div class="maincontent position-relative bg-white p-5 my-5 overflow-hidden">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h1 class="text-center">بیمه شخص ثالث چیست؟</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="maincontent__tabs d-flex flex-column justify-content-center mt-5">
+
+                        <ul class="nav nav-pills mb-3 d-flex justify-content-center maincontent__nav py-3"
+                            id="pills-tab" role="tablist">
+                            <li class="nav-item px-5 maincontent__item">
+                                <a class="nav-link px-5 py-3 maincontent__link text-white active " id="pills-home-tab"
+                                    data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">درباره بیمه </a>
+                            </li>
+                            <li class="nav-item px-5 maincontent__item">
+                                <a class="nav-link px-5 maincontent__link py-3 text-white" id="pills-profile-tab"
+                                    data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false">سوالات متداول</a>
+                            </li>
+                            <li class="nav-item px-5 maincontent__item">
+                                <a class="nav-link px-5 maincontent__link py-3 text-white" id="pills-contact-tab"
+                                    data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">درخواست مشاوره</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent  ">
+                            <div class="tab-pane fade show active text-secondary p-5 maincontent__contents"
+                                id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">بیمه شخص ثالث چیست؟
+                                هرگونه خسارت مالی و جانی وارد شده به اشخاص ثالث در حوادث رانندگی به عهده بیمه شخص ثالث
+                                است. بر اساس قانون، خرید بیمه شخص ثالث برای تمام خودروها اجباری است و نداشتن این بیمه
+                                عواقب جبران ناپذیری برای دارندگان وسائل نقلیه به همراه خواهد داشت. در قرارداد بیمه شخص
+                                ثالث، شخص سوم یا ثالث تمام افرادی هستند که در حوادث مرتبط با خودرو، زیان جانی یا مالی
+                                دیده باشند؛ البته در تعریف این بیمه راننده مقصر حادثه، شخص ثالث محسوب نمی‌شود و برای
+                                جبران خسارت‌های جانی راننده مقصر، بیمه حوادث راننده به همراه بیمه‌نامه شخص ثالث ارائه
+                                می‌شود. توجه داشته باشید که بیمه حوادث راننده فقط خسارت‌های جانی وارد شده به راننده
+                                (شامل فوت، نقص عضو و هزینه‌های درمانی) را جبران می‌کند و در برابر خسارت‌های مالی هیچگونه
+                                پوششی ارائه نمی‌دهد. چه مواردی تحت پوشش بیمه شخص ثالث قرار می‌گیرد؟ پوشش‌های بیمه شخص
+                                ثالث به دو دسته پوشش مالی و جانی تقسیم می‌شود که پوشش جانی این بیمه شامل غرامت فوت، نقص
+                                عضو و هزینه‌های درمانی افراد آسیب دیده در حوادث رانندگی است. در پوشش مالی هم خسارت‌های
+                                مالی وارد شده به خودرو یا اموال افراد زیان دیده (به جز راننده مقصر) جبران می‌شود. سقف
+                                پرداخت هزینه‌ها در پوشش جانی بر اساس مبلغ دیه در ماه حرام تعیین می‌شود. سقف پوشش مالی هم
+                                در شرکت‌های مختلف بیمه متفاوت است اما حداقل پوشش مالی تعیین شده توسط بیمه مرکزی در سال
+                                99، 11 میلیون تومان است. حداکثر پوشش مالی در بیشتر شرکت‌های بیمه معادل 40 میلیون تومان
+                                است و در بعضی از شرکت‌ها مثل بیمه شخص ثالث ایران در شرایط خاص تا 220 میلیون تومان هم
+                                می‌رسد. مبلغ دیه کامل چقدر است؟ ماه‌های حرام کدامند؟ مبلغ دیه در ابتدای هر سال توسط بیمه
+                                مرکزی اعلام می شود. مبلغ دیه در سال 1399 و برای ماه های عادی 330 میلیون و برای ماه های
+                                حرام 440 میلیون تومان اعلام شده است. سقف پوشش جانی بیمه شخص ثالث هم به اندازه ی مبلغ دیه
+                                در ماه حرام (440 میلیون تومان) است و حداقل پوشش مالی به اندازه یک چهلم مبلغ دیه ماه حرام
+                                (11 میلیون تومان) در نظر گرفته می‌شود. البته خسارت جانی راننده مقصر بر اساس دیه ماه غیر
+                                حرام (ماه عادی) پرداخت می‌شود. ماه‌های حرام به ترتیب محرم، رجب، ذی‌القعده و ذی‌الحجه
+                                هستند. نرخ بیمه شخص ثالث 99 همانطور که در مطالب بالا اشاره کردیم، حق بیمه پایه شخص ثالث
+                                هر ساله توسط بیمه مرکزی تعیین و به شرکت‌های بیمه ابلاغ می‌شود. نرخ بیمه شخص ثالث سال 99
+                                که انتهای سال گذشته اعلام شد، نسبت به سال گذشته (سال 98) افزایش قیمت داشته است که دلیل
+                                اصلی این افزایش قیمت را می‌توان افزایش نرخ دیه سال 99 دانست. در جدول زیر نرخ بیمه شخص
+                                ثالث 99 در وسایل نقلیه مختلف و بر اساس تعداد سیلندر آن نشان داده شده است.</div>
+                            <div class="tab-pane fade text-secondary p-5" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="maincontent__middle d-flex flex-column justify-content-center">
+
+
+                                    <h2 class="d-flex align-self-start maincontent__middle-heading">چرا باید بیمه شخص
+                                        ثالث داشته باشیم ؟</h2>
+                                    <div class="maincontent__middle-hidecontent mt-5" id="maincontent__middle-hidetop">
+                                        تصور کنید شما در هنگام رانندگی با اتومبیل و یا موتور سیکلت به شخص یا اشخاصی
+                                        خسارت وارد کنید، و در آن حادثه مقصر شناخته شوید، طبق قانون شما مسئول جبران این
+                                        خسارت به زیان‌دیدگان هستید. بنابراین نیاز به بیمه‌ای دارید تا در هنگام بروز این
+                                        حوادث در جبران خسارت پشتوانه شما باشد. ممکن است این خسارت مالی و یا جانی باشد.بر
+                                        اساس قانون مالک خودرو یا کسی که خودرو در اختیار اوست باید اقدام به تهیه بیمه شخص
+                                        ثالث نماید. (در این صورت، این شخص بیمه‌گذار نامیده می‌شود.)
+                                    </div>
+
+
+                                    </hr class="maincontent__middle-yellow w-100" >
+                                    </hr class="maincontent__middle-blue w-50">
+                                    <button type="button" class="close maincontent__middle-close mt-5"
+                                        id="maincontent__middle-closetop" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+
+                                    </button>
+
+
+
+
+                                    <h2 class="d-flex align-self-start maincontent__middle-heading mt-5">چرا باید بیمه
+                                        شخص ثالث داشته باشیم ؟</h2>
+                                    <div class=" maincontent__middle-hidecontent mt-5"
+                                        id="maincontent__middle-hidebottom">
+                                        تصور کنید شما در هنگام رانندگی با اتومبیل و یا موتور سیکلت به شخص یا اشخاصی
+                                        خسارت وارد کنید، و در آن حادثه مقصر شناخته شوید، طبق قانون شما مسئول جبران این
+                                        خسارت به زیان‌دیدگان هستید. بنابراین نیاز به بیمه‌ای دارید تا در هنگام بروز این
+                                        حوادث در جبران خسارت پشتوانه شما باشد. ممکن است این خسارت مالی و یا جانی باشد.بر
+                                        اساس قانون مالک خودرو یا کسی که خودرو در اختیار اوست باید اقدام به تهیه بیمه شخص
+                                        ثالث نماید. (در این صورت، این شخص بیمه‌گذار نامیده می‌شود.)
+                                    </div>
+                                    <button type="button" class="close maincontent__middle-close mt-5"
+                                        id="maincontent__middle-closebottom" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+
+
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade text-secondary p-5" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+
+                                        <form class="">
+                                            <div class="form-group">
+
+                                                <input type="input"
+                                                    class="form-control maincontent__middle-input maincontent__middle-in py-3"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                    placeholder="نام">
+
+                                            </div>
+                                            <div class="form-group">
+
+                                                <input type="input"
+                                                    class="form-control maincontent__middle-input maincontent__middle-in"
+                                                    id="exampleInputPassword1" placeholder="نام خانوادگی">
+                                            </div>
+                                            <div class="form-group">
+
+                                                <input type="input"
+                                                    class="form-control maincontent__middle-input maincontent__middle-in"
+                                                    id="exampleInputPassword1" placeholder="شماره تلفن">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control maincontent__middle-input"
+                                                    placeholder="توضیحات" id="exampleFormControlTextarea1"
+                                                    rows="3"></textarea>
+                                            </div>
+                                            <button type="submit"
+                                                class="btn btn-primary px-5 py-3 d-flex align-self-center maincontent__middle-taeid">تایید</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <img class="maincontent__middle-img mt-5 mt-lg-0 d-flex align-self-center"
+                                            src="assets/img/moshavere.png" alt="">
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="footer__mainlogo  d-none d-lg-flex   justify-content-center align-items-center">
+                <img src="assets/img/kisspng-logo-coreldraw-cdr-cli_ea.png" alt="" class="">
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="custom-shape-divider-top-1603987735 footer__shap d-none d-lg-block">
+
+
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+
+            </svg>
+
+        </div>
+        <div class="container-fluid ">
+
+            <div class="row  ">
+
+                <div class=" col-12 d-block d-lg-none footer__bimsa">
+                    <p class="pt-2">بیمسا</p>
+                </div>
+                <div class="col-4 order-lg-0 order-1">
+
+
+                    <ul class=" list-unstyled footer__list  pb-5">
+                        <li class="list-item text-white"><a href="#"> بیمه شخص ثالث</a> </li>
+                        <li class="list-item text-white"><a href="#"> بیمه بدنه </a></li>
+                        <li class="list-item text-white"><a href="#">بیمه آتش سوزی</a></li>
+                        <li class="list-item text-white"><a href="#">همکاری با ما</a></li>
+                        <li class="list-item text-white"><a href="#">تماس با ما</a></li>
+                        <li class="list-item text-white"><a href="#">درباره ما</a></li>
+                        <li class="list-item text-white"><a href="#"> فرصت های شغلی</a></li>
+                    </ul>
+                </div>
+                <div class="col-4  order-lg-1 order-2">
+
+                    <div class="footer__img-top d-flex justify-content-around">
+                        <img src="assets/img/_temp-logo-samandehi.png" class="" alt="" />
+                        <img src="assets/img/_temp-logo-enamad.png" class="" alt="" />
+                    </div>
+
+                    <div
+                        class="footer__img-bottom d-flex justify-content-around  align-items-center flex-column flex-lg-row">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+                        <!-- <i class="fab fa-twitter d-flex align-self-center justify-content-center" aria-hidden="true"></i> 
+                        <i class="fab fa-twitter d-flex align-self-center justify-content-center" aria-hidden="true"></i>
+                        <i class="fab fa-instagram d-flex align-self-center justify-content-center" aria-hidden="true"></i>
+                        <i class="fab fa-telegram-plane d-flex align-self-center justify-content-center"></i> -->
+                    </div>
+                </div>
+                <div class="col-4 order-lg-2 order-0 pb-5">
+
+                    <ul class=" list-unstyled footer__list">
+                        <li class="list-item text-white"><a href="#"> ورود به پنل</a> </li>
+                        <li class="list-item text-white"><a href="#">شرایط و قوانین</a></li>
+                        <li class="list-item text-white"><a href="#">سوالات متداول</a></li>
+                        <li class="list-item text-white"><a href="#">همکاری با ما</a></li>
+                        <li class="list-item text-white"><a href="#">تماس با ما</a></li>
+                        <li class="list-item text-white"><a href="#">درباره ما</a></li>
+                        <li class="list-item text-white"><a href="#"> فرصت های شغلی</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer__copy ">
+                    <p class="pt-3">تمام حقوق این سایت متعلق به شرکت بیمسا است</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script> -->
+    <!--     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script> -->
+
+
+
+</body>
+
+</html>

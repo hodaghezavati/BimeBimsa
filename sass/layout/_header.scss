@@ -1,0 +1,42 @@
+.header{
+    background-image: url('../../assets/img/ID625918.png');
+    background-position: center;
+    background-size: cover;
+    height:90rem;
+    @media (max-width: 991.98px) {
+
+        height:70rem; 
+    } 
+}    
+
+
+.custom-shape-divider-bottom-1604234456 {
+    position: absolute;
+    // z-index: 150;
+    bottom: -8.5rem;
+    
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    // z-index:2000;
+}
+
+.custom-shape-divider-bottom-1604234456 svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 21rem;
+}
+
+.custom-shape-divider-bottom-1604234456 .shape-fill {
+    fill: $body_background;
+}
+
+
+@media (max-width: 991.98px) { 
+    .custom-shape-divider-bottom-1604234456 svg {
+    height: 15rem;
+}
+}

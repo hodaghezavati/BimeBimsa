@@ -1,0 +1,44 @@
+.bime{
+
+
+    color:$blue;
+    font-size: 1.8rem; 
+    background-color: $white;
+    border-radius: 4rem;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+
+    &__bottom{
+        // border-radius:0 0 4rem 4rem ;
+    }
+
+    & .col-bime{
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
+    &__top{
+        // border-radius: 4rem 4rem 0 0;
+        background-color: $blue; 
+       
+    } 
+    
+
+    
+ 
+    &-label{
+
+        @media (max-width: 991.98px) { 
+            display:none;
+        }
+    }
+    &-box{ 
+        color: $blue;
+        & select{
+            width:100%;
+            border-color: $blue;
+            border-radius: 1rem; 
+            padding: 1rem 0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+        }
+    }
+}

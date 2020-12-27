@@ -1,0 +1,50 @@
+.fixed-circle{
+    background-color: $color-grey-light-1;
+    width: 11rem;
+    height: 11rem;
+    top: 40%;
+    position: fixed;
+    border: 2px dashed $color-primary;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    z-index: 5000;    
+
+    &.home{
+        animation: increaseOpacity .9s ease-in-out 5s;
+        animation-fill-mode: backwards;
+    }
+    
+    
+    @include respond(phone){ display: none !important; }
+
+    &--left{
+        left: 5%;
+    }
+
+    &--right{
+        left: 90%;
+    }
+ 
+
+    &__extension-photo{
+        height: 6rem;
+        width: 6rem;
+    }
+    
+    &__extension-text{
+        font-size: $default-font-size;
+        color: $color-primary;
+        margin-top: -1rem;
+    }
+    
+    &__coverstion-photo{
+        height: 5rem;
+        width: 5rem;
+    }
+    
+    &__coverstion-text{
+        font-size: $default-font-size;
+        color: $color-primary;
+        margin-top: 1rem;
+    }
+}

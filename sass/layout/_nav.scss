@@ -1,0 +1,94 @@
+img.navbar-toggler-icon.navbar__mobileicon{
+    width:5rem !important;
+    height:auto;
+}
+
+
+.navbar{
+
+    border-bottom:1rem solid $lightgrey;
+
+    animation-name: movein;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    transition: all .4s;
+ 
+
+&-toogler &__mobileicon{
+    width:3.5rem !important;
+    height:3.5rem !important;
+}
+
+&__button.navbar-toggler:focus{
+    box-shadow: none !important;
+    
+}
+
+
+&__menudesktop{
+    margin: 0 auto; 
+}
+
+&__menumobile{
+    text-align: right;
+    
+    font-size: 1.4rem;
+    & ul li a {
+        color:$black;
+    }
+}
+
+&__logo{
+    animation-delay: .5s;
+    animation-name: moveinmiddle; 
+    animation-duration: 2.7s;
+    z-index: 999999;
+    transition: all .4s;
+
+    @media (max-width: 991.98px) {
+
+    animation-name:moveinbottom;
+    }
+}
+.nav-link{
+    font-size: 1.8rem !important; 
+    font-family: Vazir; 
+    color:$black !important;  
+    transition: all .2s ease-in-out;
+}
+    .nav-item{
+        &:not(:first-child){
+            margin-right:2rem; 
+        }
+        &:hover{
+            background-color: $blue;
+           
+            border-radius: .5rem;
+        }
+        &:hover a{
+            color:$white !important; 
+        }
+    }  
+    
+    
+    
+    .bim-font{
+        font-size: 1.8rem !important; 
+        font-family: Vazir; 
+        color:$primary-blue !important; 
+
+
+
+    }
+
+
+    @media (max-width: 991.98px) {
+        .bim-font{
+            font-size: 1.4rem !important; 
+           font-weight: 900;
+    
+    
+    
+        }
+    }
+} 

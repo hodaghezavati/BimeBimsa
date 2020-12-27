@@ -1,0 +1,101 @@
+
+.maincontent{
+
+
+    top:-9rem;
+    z-index:9999;
+    @media (max-width: 991.98px) {
+        top:0;
+
+
+    }
+
+    box-shadow: 0 0 5px #969595;
+    
+    border-radius: 5rem;
+    font-size: 1.6rem;
+
+
+    &__contents{
+        
+        line-height: 4rem; 
+        text-align: justify;
+    }
+    &__nav{
+        background-color: $blue;
+        box-shadow: 0 0 5px #969595;
+        border-radius: 2rem;
+    }
+    &__item{
+
+    }
+    &__link.nav-link.active{
+        color:$white !important;
+    }
+    &__link.nav-link.active:active{
+        background-color:$primary_yellow !important;
+    }
+
+
+    &__middle{
+
+        &-heading{
+            text-align: right;
+        }
+        &-img{
+            width:80%;
+            height:auto;
+        }
+        &-input{
+            border:1px solid $blue !important;
+            border-radius: 1rem !important;
+            font-size:1.8rem !important;
+        }
+        &-in{
+            height: 5rem !important;
+        }
+        &-taeid{
+            font-size:1.8rem !important;
+            margin:0 auto !important;
+            border-radius: 1rem !important;
+        }
+        &-hidecontent{
+            text-align: right;
+            line-height: 3.5rem; 
+        }
+
+        &-close{
+            width:4rem !important;
+            height:4rem !important;
+            background-color: $primary-blue !important;
+            color: $white !important;
+            border:1px solid $primary-blue !important;
+            border-radius: 50% !important; 
+           margin:0 auto;
+
+
+
+        }
+
+
+        // i{
+        //     font-size: 3rem;
+        //     background-color: white;
+        //     color: $color-primary;
+        //     border-radius: 100%;
+        //     cursor: pointer;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        // }
+
+        // h2{
+        //     font-size: 2rem;
+        //     font-weight: 600;
+        //     color: $color-grey-dark-2;
+        // }
+
+       
+    }
+}   

@@ -1,0 +1,9 @@
+%remain-steps{
+    &:before {
+      content: counter(stepNum);
+      font-weight: 700;
+    }
+    &:after{
+      background-color: #B2B2B2;
+    }
+  }
