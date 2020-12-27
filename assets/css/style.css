@@ -1516,6 +1516,7 @@ img.navbar-toggler-icon.navbar__mobileicon {
   .maincontent__middle-close {
     width: 4rem !important;
     height: 4rem !important;
+    font-size: 2.5rem !important;
     background-color: #1f77eb !important;
     color: white !important;
     border: 1px solid #1f77eb !important;
